@@ -39,7 +39,7 @@ function setTable(top5, probs) {
         let sym = document.getElementById('sym' + (i + 1))
         let prob = document.getElementById('prob' + (i + 1))
         sym.innerHTML = top5[i]
-        prob.innerHTML = Math.round(probs[i] * 100)
+        prob.innerHTML = Math.round(probs[i] * 100) + '%'
     }
 
     createPie(".pieID.legend", ".pieID.pie");
